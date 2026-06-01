@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shri Rishabh Tirth Trust | Devotional Spiritual Awakening & Heritage</title>
+    <meta name="description" content="Preserving Eternal Vedic Traditions, managing historical ashrams, and dedicating ourselves to humanitarian services under the light of Sanatana Dharma.">
+    <meta name="keywords" content="Shri Rishabh Tirth Trust, Maharaj Ji, Ashram, Yajna, Vedic, Mandir, Sanatana Dharma">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shri Rishabh Tirth Trust | Divine Spiritual Awakening">
+    <meta property="og:description" content="Preserving Dharma, Spiritual Wisdom, Service to Humanity and Sacred Traditions.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1609137144813-7dcc93df5300">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#B33925',
+                        gold: '#D4AF37',
+                        cream: '#FDFBF7',
+                        charcoal: '#2C3E50',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-header {
+            background: rgba(253, 251, 247, 0.8) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Shri Rishabh Tirth Trust",
+      "description": "Preserving Dharma, Spiritual Wisdom, Service to Humanity and Sacred Traditions.",
+      "url": "#",
+      "logo": "https://images.unsplash.com/photo-1609137144813-7dcc93df5300",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sakti",
+        "addressRegion": "Chhattisgarh",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+</head>
+<body class="bg-cream text-charcoal font-sans selection:bg-saffron selection:text-white overflow-x-hidden">
+
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="header-inner" class="flex items-center justify-between border-b border-white/10 pb-4">
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full border-2 border-gold flex items-center justify-center bg-saffron text-gold font-serif font-bold text-xl shadow-lg group-hover:rotate-[360deg] transition-transform duration-1000">
+                        ॐ
+                    </div>
+                    <div class="flex flex-col">
+                        <span id="nav-title" class="font-serif text-lg sm:text-xl font-bold tracking-widest text-white drop-shadow-md transition-colors">
+                            SHRI RISHABH TIRTH
+                        </span>
+                        <span id="nav-subtitle" class="text-[10px] uppercase tracking-widest text-gold font-semibold drop-shadow-sm">
+                            Spiritual Trust
+                        </span>
+                    </div>
+                </a>
+
+                <nav id="nav-links" class="hidden lg:flex space-x-7 text-xs font-semibold tracking-widest uppercase text-white drop-shadow-sm">
+                    <a href="index.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Home</a>
+                    <a href="founder.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Founder</a>
+                    <a href="mandir.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Mandirs</a>
+                    <a href="yajnas.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all text-gold">Yajnas</a>
+                    <a href="welfare.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Welfare</a>
+                    <a href="gallery.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Gallery</a>
+                    <a href="contact.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Contact</a>
+                </nav>
+
+                <button id="menu-btn" class="lg:hidden text-white focus:outline-none transition-colors" aria-label="Toggle Menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden fixed inset-y-0 right-0 w-80 bg-cream shadow-2xl z-50 p-8 flex flex-col justify-between border-l border-gold/20 transform transition-transform duration-300">
+            <div>
+                <div class="flex justify-between items-center mb-12">
+                    <span class="font-serif text-charcoal font-bold tracking-wider">NAVIGATE</span>
+                    <button id="close-menu" class="text-charcoal text-xl font-bold focus:outline-none">✕</button>
+                </div>
+                <nav class="flex flex-col space-y-5 text-sm font-semibold tracking-wider uppercase text-charcoal">
+                    <a href="index.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Home</a>
+                    <a href="founder.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Founder</a>
+                    <a href="mandir.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Mandirs</a>
+                    <a href="yajnas.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2 text-saffron">Yajnas</a>
+                    <a href="welfare.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Welfare</a>
+                    <a href="gallery.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Gallery</a>
+                    <a href="contact.html" class="hover:text-saffron transition-colors pb-2">Contact</a>
+                </nav>
+            </div>
+            <p class="text-[11px] text-charcoal/40 tracking-widest text-center">© 2026 SHRI RISHABH TIRTH TRUST</p>
+        </div>
+    </header>
+
+
+    <!-- HERO HEADER BANNER START -->
+        <section class="relative min-h-[50vh] sm:min-h-[55vh] flex items-center justify-center overflow-hidden bg-black pt-24 sm:pt-32 pb-24">
+            
+            <!-- Background Image with smooth zoom effect -->
+            <div class="absolute inset-0 z-0 bg-cover bg-center opacity-40 transform hover:scale-110 transition-transform duration-[20s] ease-out" style="background-image: url('https://images.pexels.com/photos/7470318/pexels-photo-7470318.jpeg');"></div>
+            
+            <!-- Pure Black Premium Overlay (No bluish tints) -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-black/95 z-10 pointer-events-none"></div>
+
+            <!-- Content -->
+            <div class="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center mt-8">
+                
+                <!-- Decorative Kicker -->
+                <div class="flex items-center gap-4 mb-6 fade-in-up visible">
+                    <div class="h-[1px] w-8 sm:w-16 bg-gradient-to-r from-transparent to-gold/70"></div>
+                    <span class="text-gold uppercase tracking-[0.4em] text-[10px] sm:text-xs font-bold font-sans">Sacred Fire Invocations</span>
+                    <div class="h-[1px] w-8 sm:w-16 bg-gradient-to-l from-transparent to-gold/70"></div>
+                </div>
+                
+                <!-- Main Title with Strong Drop Shadow -->
+                <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-wide leading-tight text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] mb-8 fade-in-up visible">
+                    Grand Shri Mahavishnu Yajna
+                </h1>
+                
+                <!-- Refined Description Box (Elegant top/bottom borders) -->
+                <div class="max-w-2xl mx-auto border-t border-b border-gold/30 bg-black/40 backdrop-blur-sm py-5 px-6 fade-in-up visible shadow-xl">
+                    <p class="text-stone-200 text-sm md:text-base font-light tracking-wide leading-relaxed drop-shadow-md">
+                        Preserving cosmic order and purifying human consciousness through the precise deployment of ancient Vedic fire rituals.
+                    </p>
+                </div>
+
+            </div>
+            
+            <!-- Smooth transition ONLY at the very bottom edge to blend into the next section 
+            <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-cream to-transparent z-20 pointer-events-none"></div>-->
+        </section>
+        <!-- HERO HEADER BANNER END -->
+
+    <section class="py-16 md:py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pb-16 border-b border-stone-200 fade-in-up">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-saffron uppercase tracking-widest text-xs font-bold block">More Than 100 Yajnas Conducted</span>
+                        <h2 class="font-serif text-2xl md:text-4xl font-bold text-charcoal tracking-wide">A Legacy of Pure Devotion</h2>
+                    </div>
+                    <p class="text-xs text-charcoal/70 leading-relaxed font-light">
+                        Under the divine guidance of Pujya Maharaj Ji and executed by elite, highly learned Vedic scholars traveled directly from **Varanasi**, the Trust has successfully organized over 100 grand-scale Mahavishnu Yajnas. 
+                    </p>
+                    <p class="text-xs text-charcoal/70 leading-relaxed font-light">
+                        These massive spiritual events gather thousands of spiritual seekers, anchoring intense prayer frequencies, offering mass food distributions (Annakshetra), and stabilizing positive environmental energies across entire regions.
+                    </p>
+                    <blockquote class="border-l-2 border-gold pl-4 italic text-xs text-saffron font-serif bg-white/60 p-4 rounded-r-xl">
+                        "Yajna is the supreme cosmic act that strings together our material environment and the underlying divine laws of nature, creating balance and deep internal healing."
+                    </blockquote>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="p-4 border border-gold/20 rounded-2xl bg-white shadow-xl relative">
+                        <div class="aspect-[4/3] rounded-xl overflow-hidden bg-stone-100">
+                            <img src="https://images.unsplash.com/photo-1609137144971-460699042a49" alt="Vedic Yajna Sacred Fire Altar Close up view" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="absolute -top-1 -left-1 w-6 h-6 border-t-2 border-l-2 border-gold"></div>
+                        <div class="absolute -bottom-1 -right-1 w-6 h-6 border-b-2 border-r-2 border-gold"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-stone-50 border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in-up">
+                <span class="text-saffron uppercase tracking-widest text-xs font-bold block mb-2">Sacred Tithi Cycles</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-bold text-charcoal">Annual Yajna Calendar</h2>
+                <div class="w-16 h-[1px] bg-gold mx-auto mt-3"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border border-gold/10 overflow-hidden fade-in-up">
+                <div class="bg-saffron p-5 text-white border-b border-gold/20 flex justify-between items-center">
+                    <span class="font-serif text-sm tracking-wider font-semibold">Traditional Ritual Tithi Coordinates</span>
+                    <span class="text-[9px] uppercase bg-white/10 text-gold px-2.5 py-1 rounded tracking-widest font-bold">Vedic Astrology</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
+                        <thead>
+                            <tr class="bg-stone-50 border-b border-stone-200 text-charcoal uppercase text-[10px] tracking-widest font-bold">
+                                <th class="p-4 sm:p-6">Sacred Ashram Venue Location</th>
+                                <th class="p-4 sm:p-6">Prescribed Lunisolar Vedic Period</th>
+                                <th class="p-4 sm:p-6 text-right">Ritual Context</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-xs divide-y divide-stone-100 text-charcoal/80">
+                            <tr class="hover:bg-cream/40 transition-colors">
+                                <td class="p-4 sm:p-6 font-bold flex items-center space-x-2">
+                                    <span class="text-saffron">🔱</span>
+                                    <span>Sitamani, Korba</span>
+                                </td>
+                                <td class="p-4 sm:p-6 text-saffron italic font-serif">Margashirsha Shukla Shasthi – Purnima</td>
+                                <td class="p-4 sm:p-6 text-right text-stone-500">Cave Enlightenment</td>
+                            </tr>
+                            <tr class="hover:bg-cream/40 transition-colors">
+                                <td class="p-4 sm:p-6 font-bold flex items-center space-x-2">
+                                    <span class="text-saffron">🔱</span>
+                                    <span>Damaudhara, Sakti</span>
+                                </td>
+                                <td class="p-4 sm:p-6 text-saffron italic font-serif">Magha Shukla Shasthi – Purnima</td>
+                                <td class="p-4 sm:p-6 text-right text-stone-500">Heritage Inception</td>
+                            </tr>
+                            <tr class="hover:bg-cream/40 transition-colors">
+                                <td class="p-4 sm:p-6 font-bold flex items-center space-x-2">
+                                    <span class="text-saffron">🔱</span>
+                                    <span>Tapovan, Rishikesh</span>
+                                </td>
+                                <td class="p-4 sm:p-6 text-saffron italic font-serif">Vaishakha Shukla Shasthi – Purnima</td>
+                                <td class="p-4 sm:p-6 text-right text-stone-500">Himalayan Purification</td>
+                            </tr>
+                            <tr class="hover:bg-cream/40 transition-colors">
+                                <td class="p-4 sm:p-6 font-bold flex items-center space-x-2">
+                                    <span class="text-saffron">🔱</span>
+                                    <span>Sodang, Ujjain</span>
+                                </td>
+                                <td class="p-4 sm:p-6 text-saffron italic font-serif">Chaitra Shukla Shasthi – Purnima</td>
+                                <td class="p-4 sm:p-6 text-right text-stone-500">Avantika Awakening</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-cream">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-6 fade-in-up">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold block">Be Part of the Ritual</span>
+            <h2 class="font-serif text-2xl md:text-3xl font-bold text-charcoal">Register For Yajnas Sankalpa</h2>
+            <p class="text-charcoal/70 text-xs md:text-sm max-w-xl mx-auto font-light leading-relaxed">
+                Seekers wishing to physically participate, enroll their families for global peace offerings (Sankalpa), or contribute toward ritual materials (Samagri) can coordinate securely with our ashram pandits.
+            </p>
+            <div class="pt-2">
+                <a href="contact.html" class="inline-block text-xs font-bold tracking-widest uppercase bg-saffron hover:bg-saffron/90 text-white px-8 py-4 rounded shadow-lg transition-colors border border-gold/20">
+                    Contact Vedic Desk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-charcoal text-gray-300 pt-16 pb-8 border-t-4 border-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Shri Rishabh Tirth Trust</h4>
+                <p class="text-xs text-gray-400 leading-relaxed font-light">
+                    Preserving classical dynamic Vedic paths and managing multi-branch historical ashrams under dedicated lines of ascetic lineage parameters.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Quick Navigation</h4>
+                <div class="flex flex-col space-y-2 text-xs font-medium uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-gold transition-colors">Home Base</a>
+                    <a href="founder.html" class="hover:text-gold transition-colors">Pujya Maharaj Ji</a>
+                    <a href="mandir.html" class="hover:text-gold transition-colors">Ashram Network</a>
+                    <a href="yajnas.html" class="hover:text-gold transition-colors text-gold">Vedic Yajnas</a>
+                    <a href="welfare.html" class="hover:text-gold transition-colors">Welfare Initiatives</a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Ashram Locations</h4>
+                <ul class="space-y-1.5 text-[11px] text-gray-400 font-light">
+                    <li>• Sakti, Chhattisgarh</li>
+                    <li>• Korba, Chhattisgarh</li>
+                    <li>• Rishikesh, Uttarakhand</li>
+                    <li>• Ujjain, Madhya Pradesh</li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Newsletter subscription</h4>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Stay updated with spiritual event schedules and periodic tithi alignments.</p>
+                <form class="flex text-xs" onsubmit="event.preventDefault(); alert('Subscribed safely.');">
+                    <input type="email" required placeholder="your@email.com" class="w-full bg-stone-800 border border-stone-700 text-white rounded-l p-2.5 focus:outline-none focus:border-gold">
+                    <button type="submit" class="bg-saffron text-white rounded-r px-4 hover:bg-saffron/90 border-y border-r border-gold/30 font-bold">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-white/5 text-center text-[11px] text-gray-500 space-y-1.5 font-light">
+            <p>© 2026 Shri Rishabh Tirth Trust. All Structural & Spiritual Rights Reserved across global dimensions.</p>
+            <p class="tracking-widest uppercase text-gold/40 text-[9px] font-bold">Preserving Sanatana Heritage Safely Generational</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white text-3xl font-light">&times;</button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain rounded shadow-2xl animate-fade-in" alt="Lightbox Visual View Enlarged">
+    </div>
+
+    <script>
+        // Header Transformation Scroll Monitoring Mechanism
+        const header = document.getElementById('main-header');
+        const navTitle = document.getElementById('nav-title');
+        const navSubtitle = document.getElementById('nav-subtitle');
+        const navLinks = document.getElementById('nav-links');
+        const menuBtn = document.getElementById('menu-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                header.classList.remove('bg-transparent', 'py-5');
+                header.classList.add('glass-header', 'py-3', 'shadow-xl');
+                navTitle.classList.replace('text-white', 'text-charcoal');
+                navSubtitle.classList.replace('text-gold', 'text-saffron');
+                if (navLinks) navLinks.classList.replace('text-white', 'text-charcoal');
+                if (menuBtn) menuBtn.classList.replace('text-white', 'text-charcoal');
+            } else {
+                header.classList.remove('glass-header', 'py-3', 'shadow-xl');
+                header.classList.add('bg-transparent', 'py-5');
+                navTitle.classList.replace('text-charcoal', 'text-white');
+                navSubtitle.classList.replace('text-saffron', 'text-gold');
+                if (navLinks) navLinks.classList.replace('text-charcoal', 'text-white');
+                if (menuBtn) menuBtn.classList.replace('text-charcoal', 'text-white');
+            }
+        });
+
+        // Mobile Canvas Drawer Interactive Control Logic Configurations
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); });
+        }
+        if(closeMenu && mobileMenu) {
+            closeMenu.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        }
+        if(mobileMenu) {
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+            });
+        }
+
+        // Lightbox Visual Processing Functionalities Array mapping
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        function openLightbox(src) {
+            if (lightboxImg && lightbox) {
+                lightboxImg.src = src;
+                lightbox.classList.remove('hidden');
+            }
+        }
+        function closeLightbox() {
+            if (lightbox) lightbox.classList.add('hidden');
+        }
+
+        // Animate On Scroll (AOS) Native Intersection Observer Implementation Engine
+        const fadeElements = document.querySelectorAll('.fade-in-up');
+        const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -40px 0px" };
+
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => scrollObserver.observe(element));
+    </script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Founder Biography | Shri Rishabh Tirth Trust</title>
+    <meta name="description" content="Explore the life, severe penance, and spiritual realizations of Pujya Maharaj Ji, Shri 1008 Shri Jagannathdas Ji Maharaj.">
+    <meta name="keywords" content="Shri Jagannathdas Ji Maharaj, Biography, Agni Samadhi, Ayodhya Dham, Mauna Vrat">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#B33925',
+                        gold: '#D4AF37',
+                        cream: '#FDFBF7',
+                        charcoal: '#2C3E50',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-header {
+            background: rgba(253, 251, 247, 0.85) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+        }
+    </style>
+</head>
+<body class="bg-cream text-charcoal font-sans selection:bg-saffron selection:text-white overflow-x-hidden antialiased">
+
+    <!-- HEADER START -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="header-inner" class="flex items-center justify-between border-b border-white/10 pb-4 transition-all duration-500">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold flex items-center justify-center bg-saffron text-gold font-serif font-bold text-lg sm:text-xl shadow-lg group-hover:rotate-[360deg] transition-transform duration-1000">
+                        ॐ
+                    </div>
+                    <div class="flex flex-col">
+                        <span id="nav-title" class="font-serif text-base sm:text-lg lg:text-xl font-bold tracking-widest text-white drop-shadow-md transition-colors duration-300">
+                            SHRI RISHABH TIRTH
+                        </span>
+                        <span id="nav-subtitle" class="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-gold font-semibold drop-shadow-sm transition-colors duration-300">
+                            Spiritual Trust
+                        </span>
+                    </div>
+                </a>
+
+                <nav id="nav-links" class="hidden lg:flex space-x-6 xl:space-x-8 text-xs font-semibold tracking-widest uppercase text-white drop-shadow-sm transition-colors duration-300">
+                    <a href="index.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-[-18px] after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gold after:transition-all duration-300">Home</a>
+                    <a href="founder.html" class="text-gold transition-colors relative after:absolute after:bottom-[-18px] after:left-0 after:h-[2px] after:w-full after:bg-gold">Founder</a>
+                    <a href="mandir.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-[-18px] after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gold after:transition-all duration-300">Mandirs</a>
+                    <a href="yajnas.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-[-18px] after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gold after:transition-all duration-300">Yajnas</a>
+                    <a href="welfare.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-[-18px] after:left-0 afternoon:h-[2px] after:w-0 hover:after:w-full after:bg-gold after:transition-all duration-300">Welfare</a>
+                    <a href="gallery.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-[-18px] after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gold after:transition-all duration-300">Gallery</a>
+                    <a href="contact.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-[-18px] after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gold after:transition-all duration-300">Contact</a>
+                </nav>
+
+                <button id="menu-btn" class="lg:hidden text-white focus:outline-none p-1 rounded hover:bg-white/10 transition-colors" aria-label="Toggle Menu">
+                    <svg class="w-6 h-6 sm:w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Side Drawer Navigation Menu -->
+        <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40 backdrop-blur-sm transition-opacity duration-300"></div>
+        <div id="mobile-menu" class="fixed inset-y-0 right-0 w-72 sm:w-80 bg-cream shadow-2xl z-50 p-6 sm:p-8 flex flex-col justify-between border-l border-gold/20 translate-x-full transition-transform duration-300 ease-in-out">
+            <div>
+                <div class="flex justify-between items-center mb-8 pb-4 border-b border-gold/10">
+                    <span class="font-serif text-charcoal font-bold tracking-wider text-sm sm:text-base">NAVIGATE</span>
+                    <button id="close-menu" class="text-charcoal/70 hover:text-saffron p-1 text-xl font-medium focus:outline-none transition-colors">✕</button>
+                </div>
+                <nav class="flex flex-col space-y-4 text-xs sm:text-sm font-semibold tracking-wider uppercase text-charcoal">
+                    <a href="index.html" class="hover:text-saffron transition-colors border-b border-gray-100/60 pb-2.5">Home</a>
+                    <a href="founder.html" class="text-saffron transition-colors border-b border-gray-100/60 pb-2.5">Founder</a>
+                    <a href="mandir.html" class="hover:text-saffron transition-colors border-b border-gray-100/60 pb-2.5">Mandirs</a>
+                    <a href="yajnas.html" class="hover:text-saffron transition-colors border-b border-gray-100/60 pb-2.5">Yajnas</a>
+                    <a href="welfare.html" class="hover:text-saffron transition-colors border-b border-gray-100/60 pb-2.5">Welfare</a>
+                    <a href="gallery.html" class="hover:text-saffron transition-colors border-b border-gray-100/60 pb-2.5">Gallery</a>
+                    <a href="contact.html" class="hover:text-saffron transition-colors pb-2">Contact</a>
+                </nav>
+            </div>
+            <p class="text-[10px] text-charcoal/40 tracking-widest text-center">© 2026 SHRI RISHABH TIRTH TRUST</p>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HERO HEADER BANNER START -->
+        <section class="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center overflow-hidden bg-black pt-24 sm:pt-32 pb-24">
+                    
+            <!-- Background Image with slightly higher opacity -->
+            <div class="absolute inset-0 z-0 bg-cover bg-center opacity-40 transform hover:scale-110 transition-transform duration-[20s] ease-out" style="background-image: url('https://images.pexels.com/photos/7470318/pexels-photo-7470318.jpeg');"></div>
+            
+            <!-- Premium Dark Overlay (Replaced charcoal with pure black) -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-black/95 z-10 pointer-events-none"></div>
+
+            <!-- Content -->
+            <div class="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center mt-8">
+                
+                <!-- Decorative Kicker -->
+                <div class="flex items-center gap-4 mb-6 fade-in-up visible">
+                    <div class="h-[1px] w-8 sm:w-16 bg-gradient-to-r from-transparent to-gold/70"></div>
+                    <span class="text-gold uppercase tracking-[0.4em] text-[10px] sm:text-xs font-bold font-sans">Our Eternal Guide</span>
+                    <div class="h-[1px] w-8 sm:w-16 bg-gradient-to-l from-transparent to-gold/70"></div>
+                </div>
+                
+                <!-- Main Title with Strong Drop Shadow for legibility -->
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-wide leading-tight text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] mb-10 fade-in-up visible">
+                    Pujya Maharaj Ji
+                </h1>
+                
+                <!-- Subtitle inside a high-contrast premium pure black pill -->
+                <div class="inline-block border border-gold/40 bg-black/80 backdrop-blur-md px-6 sm:px-10 py-4 rounded-full fade-in-up visible shadow-2xl ring-4 ring-black/20">
+                    <p class="text-gold font-serif text-sm sm:text-lg md:text-xl tracking-wider font-semibold drop-shadow-md">
+                        "Shri 1008 Shri Jagannathdas Ji Maharaj"
+                    </p>
+                </div>
+
+            </div>
+            
+            <!-- Smooth transition ONLY at the very bottom edge to blend into the next section 
+            <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-cream to-transparent z-20 pointer-events-none"></div>-->
+        </section>
+    <!-- HERO HEADER BANNER END -->
+
+    <!-- MAIN BIOGRAPHY CONTENT START -->
+    <section class="py-12 sm:py-20 md:py-24 bg-cream relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mx-auto text-center mb-16 sm:mb-20 fade-in-up">
+                <h2 class="font-serif text-xl sm:text-2xl md:text-4xl font-bold text-charcoal tracking-wide">A Life of Absolute Renunciation</h2>
+                <div class="w-12 h-[1px] bg-gold mx-auto mt-3 mb-6"></div>
+                <p class="text-charcoal/80 text-xs sm:text-sm md:text-base leading-relaxed font-light">
+                    The spiritual architecture of the Shri Rishabh Tirth Trust stands firmly upon the intense penance, pure vision, and unwavering devotion of Pujya Maharaj Ji. His earthly timeline reflects a continuous journey away from worldly illusions toward eternal cosmic alignment.
+                </p>
+            </div>
+
+            <!-- CHRONOLOGICAL TIMELINE WORKFLOW -->
+            <div class="relative max-w-4xl mx-auto border-l-2 border-gold/20 pl-6 sm:pl-10 md:pl-12 space-y-12 sm:space-y-16">
+                
+                <!-- Timeline Event item 1 -->
+                <div class="relative fade-in-up group">
+                    <div class="absolute -left-[33px] sm:-left-[47px] md:-left-[55px] top-1 w-4 h-4 rounded-full bg-saffron border-4 border-cream ring-2 ring-gold/40 transition-transform group-hover:scale-125 duration-300"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start">
+                        <div class="md:col-span-3">
+                            <span class="text-[10px] sm:text-xs font-bold tracking-widest text-gold uppercase block md:text-right">Early Life</span>
+                            <h4 class="font-serif text-base sm:text-lg font-bold text-saffron md:text-right">Auspicious Birth</h4>
+                        </div>
+                        <div class="md:col-span-9 bg-white p-5 sm:p-6 rounded-xl shadow-sm border border-gold/10 hover:shadow-md transition-shadow duration-300">
+                            <p class="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-light">
+                                Born into a pious family in **Uttar Pradesh**, India. From early childhood, Maharaj Ji displayed an inherent detachment toward transient worldly pleasures, spending prolonged hours in deep, quiet contemplative states that signaled his higher spiritual calling.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Event item 2 -->
+                <div class="relative fade-in-up group">
+                    <div class="absolute -left-[33px] sm:-left-[47px] md:-left-[55px] top-1 w-4 h-4 rounded-full bg-saffron border-4 border-cream ring-2 ring-gold/40 transition-transform group-hover:scale-125 duration-300"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start">
+                        <div class="md:col-span-3">
+                            <span class="text-[10px] sm:text-xs font-bold tracking-widest text-gold uppercase block md:text-right">Ayodhya Dham</span>
+                            <h4 class="font-serif text-base sm:text-lg font-bold text-saffron md:text-right">Sacred Diksha</h4>
+                        </div>
+                        <div class="md:col-span-9 bg-white p-5 sm:p-6 rounded-xl shadow-sm border border-gold/10 hover:shadow-md transition-shadow duration-300">
+                            <p class="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-light">
+                                Driven by an intense internal thirst for absolute truth, he renounced his home and traveled to the sacred lands of Ayodhya Dham. There, he surrendered completely at the lotus feet of the revered **Shri Shri 1008 Shri Ramdas Ji Maharaj**, receiving holy initiation and his formal spiritual title, **Shri Jagannathdas Ji Maharaj**.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Event item 3 -->
+                <div class="relative fade-in-up group">
+                    <div class="absolute -left-[33px] sm:-left-[47px] md:-left-[55px] top-1 w-4 h-4 rounded-full bg-saffron border-4 border-cream ring-2 ring-gold/40 transition-transform group-hover:scale-125 duration-300"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start">
+                        <div class="md:col-span-3">
+                            <span class="text-[10px] sm:text-xs font-bold tracking-widest text-gold uppercase block md:text-right">Sitamani Caves</span>
+                            <h4 class="font-serif text-base sm:text-lg font-bold text-saffron md:text-right">Mauna Vrat</h4>
+                        </div>
+                        <div class="md:col-span-9 bg-white p-5 sm:p-6 rounded-xl shadow-sm border border-gold/10 hover:shadow-md transition-shadow duration-300">
+                            <p class="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-light">
+                                Seeking profound, uninterrupted communion with the divine, Maharaj Ji entered the deep, isolated **Sitamani Caves**. Here, he undertook an extraordinary **"Mauna Vrat"** (vow of absolute silence) for years, channeling his mental energies inward and mastering advanced levels of yogic consciousness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Event item 4 -->
+                <div class="relative fade-in-up group">
+                    <div class="absolute -left-[33px] sm:-left-[47px] md:-left-[55px] top-1 w-4 h-4 rounded-full bg-saffron border-4 border-cream ring-2 ring-gold/40 transition-transform group-hover:scale-125 duration-300"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start">
+                        <div class="md:col-span-3">
+                            <span class="text-[10px] sm:text-xs font-bold tracking-widest text-gold uppercase block md:text-right">Trust Epicenters</span>
+                            <h4 class="font-serif text-base sm:text-lg font-bold text-saffron md:text-right">Establishments</h4>
+                        </div>
+                        <div class="md:col-span-9 bg-white p-5 sm:p-6 rounded-xl shadow-sm border border-gold/10 hover:shadow-md transition-shadow duration-300">
+                            <p class="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-light">
+                                Emerging from intense penance filled with divine grace, Maharaj Ji traveled extensively across various states to anchor hubs of spiritual recovery. He systematically established the four main branches: **Damaudhara (Sakti), Korba, Rishikesh, and Ujjain**, establishing permanent sanctuaries for spiritual seekers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Event item 5 -->
+                <div class="relative fade-in-up group">
+                    <div class="absolute -left-[33px] sm:-left-[47px] md:-left-[55px] top-1 w-4 h-4 rounded-full bg-saffron border-4 border-cream ring-2 ring-gold/40 transition-transform group-hover:scale-125 duration-300"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start">
+                        <div class="md:col-span-3">
+                            <span class="text-[10px] sm:text-xs font-bold tracking-widest text-saffron uppercase block md:text-right">Dec 15, 2008</span>
+                            <h4 class="font-serif text-base sm:text-lg font-bold text-saffron md:text-right">Agni Samadhi</h4>
+                        </div>
+                        <div class="md:col-span-9 bg-stone-900 p-5 sm:p-6 rounded-xl shadow-md border border-gold/30 text-stone-200">
+                            <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-light">
+                                Having perfectly completed his earthly mission and spiritual manifestations, Maharaj Ji merged his physical form back into the cosmic elements through **Holy Agni Samadhi** on December 15, 2008, at the primary branch of Rishabh Tirth. His divine energy continues to guide the trust's path.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MAIN BIOGRAPHY CONTENT END -->
+
+    <!-- TEACHINGS IDEALS COMPONENT START -->
+    <section class="py-12 sm:py-20 md:py-24 bg-stone-50 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16 fade-in-up">
+                <span class="text-saffron uppercase tracking-widest text-[10px] sm:text-xs font-bold block mb-2">The Teachings</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal tracking-wide">Core Ideals Imparted</h2>
+                <div class="w-16 h-[1px] bg-gold mx-auto mt-3"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 fade-in-up">
+                <!-- Ideal item 1 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/60 shadow-sm space-y-4 hover:shadow-md transition-shadow duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-saffron/10 text-saffron font-bold text-lg flex items-center justify-center">तप</div>
+                    <h3 class="font-serif text-base sm:text-lg font-bold text-charcoal">Tapasya (Austerity)</h3>
+                    <p class="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-light">
+                        Maharaj Ji strongly emphasized that true inner clarity is forged through silence, self-discipline, and sustained contemplative reflection, away from sensory noise.
+                    </p>
+                </div>
+                <!-- Ideal item 2 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/60 shadow-sm space-y-4 hover:shadow-md transition-shadow duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-saffron/10 text-saffron font-bold text-lg flex items-center justify-center">सेवा</div>
+                    <h3 class="font-serif text-base sm:text-lg font-bold text-charcoal">Sewa (Selfless Service)</h3>
+                    <p class="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-light">
+                        "Feeding a hungry soul is equivalent to serving the Supreme Being directly." This profound standard underpins our extensive, ongoing public welfare campaigns.
+                    </p>
+                </div>
+                <!-- Ideal item 3 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/60 shadow-sm space-y-4 hover:shadow-md transition-shadow duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-saffron/10 text-saffron font-bold text-lg flex items-center justify-center">यज्ञ</div>
+                    <h3 class="font-serif text-base sm:text-lg font-bold text-charcoal">Yajna (Sacred Order)</h3>
+                    <p class="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-light">
+                        Preserving the meticulous chanting of Vedic mantras to purify environmental energies and uplift humanity’s shared collective consciousness.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEACHINGS IDEALS COMPONENT END -->
+
+    <!-- FOOTER START -->
+    <footer class="bg-charcoal text-stone-300 pt-12 sm:pt-16 pb-8 border-t-4 border-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+            
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-sm sm:text-base border-b border-white/10 pb-2 tracking-wider">Shri Rishabh Tirth Trust</h4>
+                <p class="text-xs text-stone-400 leading-relaxed font-light">
+                    Preserving classical dynamic Vedic paths and managing multi-branch historical ashrams under dedicated lines of ascetic lineage parameters.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-sm sm:text-base border-b border-white/10 pb-2 tracking-wider">Quick Navigation</h4>
+                <div class="flex flex-col space-y-2 text-xs font-medium uppercase tracking-wider text-stone-400">
+                    <a href="index.html" class="hover:text-gold transition-colors">Home Base</a>
+                    <a href="founder.html" class="hover:text-gold transition-colors">Pujya Maharaj Ji</a>
+                    <a href="mandir.html" class="hover:text-gold transition-colors">Ashram Network</a>
+                    <a href="yajnas.html" class="hover:text-gold transition-colors">Vedic Yajnas</a>
+                    <a href="welfare.html" class="hover:text-gold transition-colors">Welfare Initiatives</a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-sm sm:text-base border-b border-white/10 pb-2 tracking-wider">Ashram Locations</h4>
+                <ul class="space-y-1.5 text-xs text-stone-400 font-light">
+                    <li>• Sakti, Chhattisgarh</li>
+                    <li>• Korba, Chhattisgarh</li>
+                    <li>• Rishikesh, Uttarakhand</li>
+                    <li>• Ujjain, Madhya Pradesh</li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-sm sm:text-base border-b border-white/10 pb-2 tracking-wider">Newsletter Subscription</h4>
+                <p class="text-xs text-stone-400 font-light leading-relaxed">Stay updated with spiritual event schedules and periodic tithi alignments.</p>
+                <form class="flex text-xs" onsubmit="event.preventDefault(); alert('Subscribed safely.');">
+                    <input type="email" required placeholder="your@email.com" class="w-full bg-stone-800 border border-stone-700 text-white rounded-l p-2.5 focus:outline-none focus:border-gold">
+                    <button type="submit" class="bg-saffron text-white rounded-r px-4 hover:bg-saffron/90 border-y border-r border-gold/30 font-bold">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-white/5 text-center text-[10px] sm:text-xs text-stone-500 space-y-1.5 font-light">
+            <p>© 2026 Shri Rishabh Tirth Trust. All Structural & Spiritual Rights Reserved across global dimensions.</p>
+            <p class="tracking-widest uppercase text-gold/40 text-[9px] font-bold">Preserving Sanatana Heritage Safely Generational</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- LIGHTBOX ENGINE HOOK -->
+    <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white text-3xl font-light">&times;</button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain rounded shadow-2xl" alt="Enlarged view">
+    </div>
+
+    <!-- JAVASCRIPT SYSTEM ENGINE -->
+    <script>
+        // Header Transformation Scroll Effect
+        const header = document.getElementById('main-header');
+        const headerInner = document.getElementById('header-inner');
+        const navTitle = document.getElementById('nav-title');
+        const navSubtitle = document.getElementById('nav-subtitle');
+        const navLinks = document.getElementById('nav-links');
+        const menuBtn = document.getElementById('menu-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('glass-header');
+                header.classList.remove('py-5');
+                header.classList.add('py-3');
+                headerInner.classList.remove('border-b', 'border-white/10', 'pb-4');
+                
+                navTitle.classList.remove('text-white');
+                navTitle.classList.add('text-charcoal');
+                navSubtitle.classList.remove('text-gold');
+                navSubtitle.classList.add('text-saffron');
+                if(navLinks) {
+                    navLinks.classList.remove('text-white');
+                    navLinks.classList.add('text-charcoal');
+                }
+                menuBtn.classList.remove('text-white');
+                menuBtn.classList.add('text-charcoal');
+            } else {
+                header.classList.remove('glass-header');
+                header.classList.remove('py-3');
+                header.classList.add('py-5');
+                headerInner.classList.add('border-b', 'border-white/10', 'pb-4');
+                
+                navTitle.classList.remove('text-charcoal');
+                navTitle.classList.add('text-white');
+                navSubtitle.classList.remove('text-saffron');
+                navSubtitle.classList.add('text-gold');
+                if(navLinks) {
+                    navLinks.classList.remove('text-charcoal');
+                    navLinks.classList.add('text-white');
+                }
+                menuBtn.classList.remove('text-charcoal');
+                menuBtn.classList.add('text-white');
+            }
+        });
+
+        // Responsive Sidebar Drawer Mechanics
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('mobile-menu-overlay');
+        const closeMenu = document.getElementById('close-menu');
+
+        function toggleMobileMenu(open) {
+            if(open) {
+                mobileMenu.classList.remove('translate-x-full');
+                overlay.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+                overlay.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }
+        }
+
+        menuBtn.addEventListener('click', () => toggleMobileMenu(true));
+        closeMenu.addEventListener('click', () => toggleMobileMenu(false));
+        overlay.addEventListener('click', () => toggleMobileMenu(false));
+
+        // Lightbox visual engine processing mapping
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        function openLightbox(src) {
+            lightboxImg.src = src;
+            lightbox.classList.remove('hidden');
+        }
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+        }
+
+        // Native Intersection Observer Animation Setup
+        const fadeElements = document.querySelectorAll('.fade-in-up');
+        const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -40px 0px" };
+
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => scrollObserver.observe(element));
+    </script>
+</body>
+</html>
