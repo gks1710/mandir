@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shri Rishabh Tirth Trust | Devotional Spiritual Awakening & Heritage</title>
+    <meta name="description" content="Preserving Eternal Vedic Traditions, managing historical ashrams, and dedicating ourselves to humanitarian services under the light of Sanatana Dharma.">
+    <meta name="keywords" content="Shri Rishabh Tirth Trust, Maharaj Ji, Ashram, Yajna, Vedic, Mandir, Sanatana Dharma">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shri Rishabh Tirth Trust | Divine Spiritual Awakening">
+    <meta property="og:description" content="Preserving Dharma, Spiritual Wisdom, Service to Humanity and Sacred Traditions.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1609137144813-7dcc93df5300">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#B33925',
+                        gold: '#D4AF37',
+                        cream: '#FDFBF7',
+                        charcoal: '#2C3E50',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-header {
+            background: rgba(253, 251, 247, 0.8) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Shri Rishabh Tirth Trust",
+      "description": "Preserving Dharma, Spiritual Wisdom, Service to Humanity and Sacred Traditions.",
+      "url": "#",
+      "logo": "https://images.unsplash.com/photo-1609137144813-7dcc93df5300",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sakti",
+        "addressRegion": "Chhattisgarh",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+</head>
+<body class="bg-cream text-charcoal font-sans selection:bg-saffron selection:text-white overflow-x-hidden">
+
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="header-inner" class="flex items-center justify-between border-b border-white/10 pb-4">
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full border-2 border-gold flex items-center justify-center bg-saffron text-gold font-serif font-bold text-xl shadow-lg group-hover:rotate-[360deg] transition-transform duration-1000">
+                        ॐ
+                    </div>
+                    <div class="flex flex-col">
+                        <span id="nav-title" class="font-serif text-lg sm:text-xl font-bold tracking-widest text-white drop-shadow-md transition-colors">
+                            SHRI RISHABH TIRTH
+                        </span>
+                        <span id="nav-subtitle" class="text-[10px] uppercase tracking-widest text-gold font-semibold drop-shadow-sm transition-colors">
+                            Spiritual Trust
+                        </span>
+                    </div>
+                </a>
+
+                <nav id="nav-links" class="hidden lg:flex space-x-7 text-xs font-semibold tracking-widest uppercase text-white drop-shadow-sm transition-colors">
+                    <a href="index.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Home</a>
+                    <a href="founder.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Founder</a>
+                    <a href="mandir.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Mandirs</a>
+                    <a href="yajnas.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Yajnas</a>
+                    <a href="welfare.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Welfare</a>
+                    <a href="gallery.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Gallery</a>
+                    <a href="contact.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Contact</a>
+                </nav>
+
+                <button id="menu-btn" class="lg:hidden text-white focus:outline-none transition-colors" aria-label="Toggle Menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden fixed inset-y-0 right-0 w-80 bg-cream shadow-2xl z-50 p-8 flex flex-col justify-between border-l border-gold/20 transform transition-transform duration-300">
+            <div>
+                <div class="flex justify-between items-center mb-12">
+                    <span class="font-serif text-charcoal font-bold tracking-wider">NAVIGATE</span>
+                    <button id="close-menu" class="text-charcoal text-xl font-bold focus:outline-none">✕</button>
+                </div>
+                <nav class="flex flex-col space-y-5 text-sm font-semibold tracking-wider uppercase text-charcoal">
+                    <a href="index.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Home</a>
+                    <a href="founder.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Founder</a>
+                    <a href="mandir.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Mandirs</a>
+                    <a href="yajnas.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Yajnas</a>
+                    <a href="welfare.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Welfare</a>
+                    <a href="gallery.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Gallery</a>
+                    <a href="contact.html" class="hover:text-saffron transition-colors pb-2">Contact</a>
+                </nav>
+            </div>
+            <p class="text-[11px] text-charcoal/40 tracking-widest text-center">© 2026 SHRI RISHABH TIRTH TRUST</p>
+        </div>
+    </header>
+
+    <section class="relative min-h-[45vh] flex items-center justify-center overflow-hidden bg-black pt-24">
+        <div class="absolute inset-0 z-0 bg-cover bg-center opacity-40 scale-105" style="background-image: url('https://images.unsplash.com/photo-1561361058-c24cecae35ca');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-cream via-black/50 to-black/80 z-10"></div>
+
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto space-y-3">
+            <span class="text-gold uppercase tracking-[0.3em] text-xs font-bold block">Spiritual Archives</span>
+            <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl text-white font-bold tracking-wide drop-shadow-2xl">
+                The Trust Media Gallery
+            </h1>
+            <div class="w-16 h-[1px] bg-gold mx-auto my-3"></div>
+            <p class="text-stone-300 text-xs sm:text-sm max-w-xl mx-auto font-light tracking-wide leading-relaxed">
+                A visual documentation of sacred traditions, spiritual landscapes, and humanitarian services preserved across decades.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-wrap justify-center items-center gap-2 mb-12 text-[11px] font-bold tracking-widest uppercase fade-in-up">
+                <button onclick="filterGallery('all')" id="tab-all" class="gallery-tab px-5 py-2.5 rounded border border-saffron bg-saffron text-white transition-all shadow-sm">All Archives</button>
+                <button onclick="filterGallery('temples')" id="tab-temples" class="gallery-tab px-5 py-2.5 rounded border border-gold/20 bg-white text-charcoal/80 hover:border-saffron transition-all shadow-sm">Temples</button>
+                <button onclick="filterGallery('yajnas')" id="tab-yajnas" class="gallery-tab px-5 py-2.5 rounded border border-gold/20 bg-white text-charcoal/80 hover:border-saffron transition-all shadow-sm">Yajnas</button>
+                <button onclick="filterGallery('saints')" id="tab-saints" class="gallery-tab px-5 py-2.5 rounded border border-gold/20 bg-white text-charcoal/80 hover:border-saffron transition-all shadow-sm">Saints</button>
+                <button onclick="filterGallery('festivals')" id="tab-festivals" class="gallery-tab px-5 py-2.5 rounded border border-gold/20 bg-white text-charcoal/80 hover:border-saffron transition-all shadow-sm">Festivals</button>
+                <button onclick="filterGallery('welfare')" id="tab-welfare" class="gallery-tab px-5 py-2.5 rounded border border-gold/20 bg-white text-charcoal/80 hover:border-saffron transition-all shadow-sm">Welfare Activities</button>
+            </div>
+
+            <div id="masonry-gallery-root" class="masonry-grid fade-in-up">
+                
+                <div class="masonry-item gallery-item group relative overflow-hidden rounded-xl border border-gold/10 shadow-md bg-white cursor-pointer transition-all duration-500" data-category="temples" onclick="openLightbox('https://images.unsplash.com/photo-1609137144813-7dcc93df5300')">
+                    <img src="https://cdn.yatradham.org/media/catalog/product/d/o/download_-_2024-06-14t183137.976_1.jpg" class="w-full h-auto object-cover transform duration-500 group-hover:scale-105" loading="lazy" alt="Temples Profile View">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
+                        <span class="text-[9px] text-gold tracking-widest uppercase font-bold">Temples</span>
+                        <h4 class="font-serif text-sm font-semibold">Primary Ashram Facade</h4>
+                    </div>
+                </div>
+
+                <div class="masonry-item gallery-item group relative overflow-hidden rounded-xl border border-gold/10 shadow-md bg-white cursor-pointer transition-all duration-500" data-category="yajnas" onclick="openLightbox('https://images.unsplash.com/photo-1609137144971-460699042a49')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFbxTtpnuEa_ea4KL22KIE-Tsu2e3G1vwq1g&s" class="w-full h-auto object-cover transform duration-500 group-hover:scale-105" loading="lazy" alt="Yajnas Execution Portfolio Asset">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
+                        <span class="text-[9px] text-gold tracking-widest uppercase font-bold">Yajnas</span>
+                        <h4 class="font-serif text-sm font-semibold">Sacred Agni Invocations</h4>
+                    </div>
+                </div>
+
+                <div class="masonry-item gallery-item group relative overflow-hidden rounded-xl border border-gold/10 shadow-md bg-white cursor-pointer transition-all duration-500" data-category="festivals" onclick="openLightbox('https://images.unsplash.com/photo-1561361058-c24cecae35ca')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1feuogo4zki_DkG_6eacu6fNNd8H7WRgM-g&s" class="w-full h-auto object-cover transform duration-500 group-hover:scale-105" loading="lazy" alt="Ganga Aarti Scene Asset">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
+                        <span class="text-[9px] text-gold tracking-widest uppercase font-bold">Festivals</span>
+                        <h4 class="font-serif text-sm font-semibold">Rishikesh Ganga Aarti</h4>
+                    </div>
+                </div>
+
+                <div class="masonry-item gallery-item group relative overflow-hidden rounded-xl border border-gold/10 shadow-md bg-white cursor-pointer transition-all duration-500" data-category="welfare" onclick="openLightbox('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c')">
+                    <img src="https://www.tripsavvy.com/thmb/fqHW415gp7rbdlltwotIRhkgxjY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-538128146-591c0f603df78cf5fa2bbb5d.jpg" class="w-full h-auto object-cover transform duration-500 group-hover:scale-105" loading="lazy" alt="Annakshetra Service Record Photo">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
+                        <span class="text-[9px] text-gold tracking-widest uppercase font-bold">Welfare Activities</span>
+                        <h4 class="font-serif text-sm font-semibold">Annakshetra Holy Distribution</h4>
+                    </div>
+                </div>
+
+                <div class="masonry-item gallery-item group relative overflow-hidden rounded-xl border border-gold/10 shadow-md bg-white cursor-pointer transition-all duration-500" data-category="welfare" onclick="openLightbox('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c')">
+                    <img src="https://i.ytimg.com/vi/tNt116Iiwy8/maxresdefault.jpg" class="w-full h-auto object-cover transform duration-500 group-hover:scale-105" loading="lazy" alt="Annakshetra Service Record Photo">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
+                        <span class="text-[9px] text-gold tracking-widest uppercase font-bold">Welfare Activities</span>
+                        <h4 class="font-serif text-sm font-semibold">Annakshetra Holy Distribution</h4>
+                    </div>
+                </div>
+
+                <div class="masonry-item gallery-item group relative overflow-hidden rounded-xl border border-gold/10 shadow-md bg-white cursor-pointer transition-all duration-500" data-category="temples" onclick="openLightbox('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c')">
+                    <img src="https://newandolder.com/wp-content/uploads/2025/08/ram-janardan-temple-ujjain.webp" class="w-full h-auto object-cover transform duration-500 group-hover:scale-105" loading="lazy" alt="Annakshetra Service Record Photo">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
+                        <span class="text-[9px] text-gold tracking-widest uppercase font-bold">Temples</span>
+                        <h4 class="font-serif text-sm font-semibold">Ram Janardan Temple</h4>
+                    </div>
+                </div>
+
+                <div class="masonry-item gallery-item group relative overflow-hidden rounded-xl border border-gold/10 shadow-md bg-white cursor-pointer transition-all duration-500" data-category="saints" onclick="openLightbox('https://images.unsplash.com/photo-1441974231531-c6227db76b6e')">
+                    <img src="https://content.jdmagicbox.com/comp/ujjain/s1/9999px734.x734.221027125219.h5s1/catalogue/siddha-ashram-guest-house-ramghat-marg-ujjain-guest-house-1jic6aulla.jpg" class="w-full h-auto object-cover transform duration-500 group-hover:scale-105" loading="lazy" alt="Hermit Landscape Scene View">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
+                        <span class="text-[9px] text-gold tracking-widest uppercase font-bold">Saints</span>
+                        <h4 class="font-serif text-sm font-semibold">Damaudhara Perennial Waterfall Sanctuary</h4>
+                    </div>
+                </div>
+
+                <div class="masonry-item gallery-item group relative overflow-hidden rounded-xl border border-gold/10 shadow-md bg-white cursor-pointer transition-all duration-500" data-category="temples" onclick="openLightbox('https://images.unsplash.com/photo-1609137144971-460699042a49')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1feuogo4zki_DkG_6eacu6fNNd8H7WRgM-g&s" class="w-full h-auto object-cover transform duration-500 group-hover:scale-105" loading="lazy" alt="Yajnashala Inner Sanctum Architecture View">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
+                        <span class="text-[9px] text-gold tracking-widest uppercase font-bold">Temples</span>
+                        <h4 class="font-serif text-sm font-semibold">Sacred Yajnashala Altar Sanctum</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-charcoal text-gray-300 pt-16 pb-8 border-t-4 border-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Shri Rishabh Tirth Trust</h4>
+                <p class="text-xs text-gray-400 leading-relaxed font-light">
+                    Preserving classical dynamic Vedic paths and managing multi-branch historical ashrams under dedicated lines of ascetic lineage parameters.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Quick Navigation</h4>
+                <div class="flex flex-col space-y-2 text-xs font-medium uppercase tracking-wider">
+                    <a href="#home" class="hover:text-gold transition-colors">Home Base</a>
+                    <a href="#founder" class="hover:text-gold transition-colors">Pujya Maharaj Ji</a>
+                    <a href="#mandirs" class="hover:text-gold transition-colors">Ashram Network</a>
+                    <a href="#yajnas" class="hover:text-gold transition-colors">Vedic Yajnas</a>
+                    <a href="#welfare" class="hover:text-gold transition-colors">Welfare Initiatives</a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Ashram Locations</h4>
+                <ul class="space-y-1.5 text-[11px] text-gray-400 font-light">
+                    <li>• Sakti, Chhattisgarh</li>
+                    <li>• Korba, Chhattisgarh</li>
+                    <li>• Rishikesh, Uttarakhand</li>
+                    <li>• Ujjain, Madhya Pradesh</li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Newsletter subscription</h4>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Stay updated with spiritual event schedules and periodic tithi alignments.</p>
+                <form class="flex text-xs" onsubmit="event.preventDefault(); alert('Subscribed safely.');">
+                    <input type="email" required placeholder="your@email.com" class="w-full bg-stone-800 border border-stone-700 text-white rounded-l p-2.5 focus:outline-none focus:border-gold">
+                    <button type="submit" class="bg-saffron text-white rounded-r px-4 hover:bg-saffron/90 border-y border-r border-gold/30 font-bold">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-white/5 text-center text-[11px] text-gray-500 space-y-1.5 font-light">
+            <p>© 2026 Shri Rishabh Tirth Trust. All Structural & Spiritual Rights Reserved across global dimensions.</p>
+            <p class="tracking-widest uppercase text-gold/40 text-[9px] font-bold">Preserving Sanatana Heritage Safely Generational</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white text-3xl font-light">&times;</button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain rounded shadow-2xl animate-fade-in" alt="Lightbox Visual View Enlarged">
+    </div>
+
+    <script>
+        // Tab Filtering Interface Functionality
+        function filterGallery(category) {
+            const tabs = document.querySelectorAll('.gallery-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-saffron', 'text-white', 'border-saffron');
+                tab.classList.add('bg-white', 'text-charcoal/80', 'border-gold/20');
+            });
+
+            const activeTab = document.getElementById(`tab-${category}`);
+            if(activeTab) {
+                activeTab.classList.remove('bg-white', 'text-charcoal/80', 'border-gold/20');
+                activeTab.classList.add('bg-saffron', 'text-white', 'border-saffron');
+            }
+
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => { item.style.opacity = '1'; item.style.transform = 'scale(1)'; }, 20);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.95)';
+                    setTimeout(() => { item.style.display = 'none'; }, 400);
+                }
+            });
+        }
+
+        // Hero Slider verification wrapper checking element availability safely
+        let currentSlide = 1;
+        const totalSlides = 3;
+        if (document.getElementById('slide-1')) {
+            setInterval(() => {
+                const active = document.getElementById(`slide-${currentSlide}`);
+                if (active) active.classList.replace('opacity-100', 'opacity-0');
+                currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+                const next = document.getElementById(`slide-${currentSlide}`);
+                if (next) next.classList.replace('opacity-0', 'opacity-100');
+            }, 5000);
+        }
+
+        // Header Transformation Scroll Handling Core
+        const header = document.getElementById('main-header');
+        const navTitle = document.getElementById('nav-title');
+        const navSubtitle = document.getElementById('nav-subtitle');
+        const navLinks = document.getElementById('nav-links');
+        const menuBtn = document.getElementById('menu-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                header.classList.add('glass-header', 'py-3', 'shadow-xl');
+                header.classList.remove('bg-transparent', 'py-5');
+                
+                navTitle.classList.add('text-charcoal');
+                navTitle.classList.remove('text-white');
+                
+                navSubtitle.classList.add('text-saffron');
+                navSubtitle.classList.remove('text-gold');
+                
+                navLinks.classList.add('text-charcoal');
+                navLinks.classList.remove('text-white');
+                
+                menuBtn.classList.add('text-charcoal');
+                menuBtn.classList.remove('text-white');
+            } else {
+                header.classList.add('bg-transparent', 'py-5');
+                header.classList.remove('glass-header', 'py-3', 'shadow-xl');
+                
+                navTitle.classList.add('text-white');
+                navTitle.classList.remove('text-charcoal');
+                
+                navSubtitle.classList.add('text-gold');
+                navSubtitle.classList.remove('text-saffron');
+                
+                navLinks.classList.add('text-white');
+                navLinks.classList.remove('text-charcoal');
+                
+                menuBtn.classList.add('text-white');
+                menuBtn.classList.remove('text-charcoal');
+            }
+        });
+
+        // Mobile Sidebar Drawer Control Layouts
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); });
+        closeMenu.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        });
+
+        // Full Screen Lightbox Handler Controls
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        function openLightbox(src) {
+            lightboxImg.src = src;
+            lightbox.classList.remove('hidden');
+        }
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+        }
+
+        // Native Intersection Observer Element Engine for Animations
+        const fadeElements = document.querySelectorAll('.fade-in-up');
+        const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -40px 0px" };
+
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => scrollObserver.observe(element));
+    </script>
+</body>
+</html>
