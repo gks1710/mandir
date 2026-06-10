@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shri Rishabh Tirth Trust | Devotional Spiritual Awakening & Heritage</title>
+    <meta name="description" content="Preserving Eternal Vedic Traditions, managing historical ashrams, and dedicating ourselves to humanitarian services under the light of Sanatana Dharma.">
+    <meta name="keywords" content="Shri Rishabh Tirth Trust, Maharaj Ji, Ashram, Yagya, Vedic, Mandir, Sanatana Dharma">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shri Rishabh Tirth Trust | Divine Spiritual Awakening">
+    <meta property="og:description" content="Preserving Dharma, Spiritual Wisdom, Service to Humanity and Sacred Traditions.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1609137144813-7dcc93df5300">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#B33925',
+                        gold: '#D4AF37',
+                        cream: '#FDFBF7',
+                        charcoal: '#2C3E50',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-header {
+            background: rgba(253, 251, 247, 0.8) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FDFBF7; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #B33925; }
+
+        /* --- Complete Hide of Google UI --- */
+        #google_translate_element { display: none !important; }
+        .goog-te-banner-frame { display: none !important; }
+        .skiptranslate iframe { display: none !important; }
+        body { top: 0 !important; position: static !important; }
+        /* Hide the hover tooltip popup */
+        .goog-tooltip { display: none !important; }
+        .goog-tooltip:hover { display: none !important; }
+        .goog-text-highlight { background-color: transparent !important; border: none !important; box-shadow: none !important; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Shri Rishabh Tirth Trust",
+      "description": "Preserving Dharma, Spiritual Wisdom, Service to Humanity and Sacred Traditions.",
+      "url": "#",
+      "logo": "https://images.unsplash.com/photo-1609137144813-7dcc93df5300",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sakti",
+        "addressRegion": "Chhattisgarh",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+</head>
+<body class="bg-cream text-charcoal font-sans selection:bg-saffron selection:text-white overflow-x-hidden">
+
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="header-inner" class="flex items-center justify-between border-b border-white/10 pb-4">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full border-2 border-gold flex items-center justify-center bg-saffron text-gold font-serif font-bold text-[10px] shadow-lg group-hover:rotate-[360deg] transition-transform duration-1000">
+                        || राम ||
+                    </div>
+                    <div class="flex flex-col">
+                        <span id="nav-title" class="font-serif text-lg sm:text-xl font-bold tracking-widest text-white drop-shadow-md transition-colors">
+                            SHRI RISHABH TIRTH
+                        </span>
+                        <span id="nav-subtitle" class="text-[10px] uppercase tracking-widest text-gold font-semibold drop-shadow-sm">
+                            Spiritual Trust
+                        </span>
+                    </div>
+                </a>
+
+                <nav id="nav-links" class="hidden lg:flex items-center space-x-7 text-xs font-semibold tracking-widest uppercase text-white drop-shadow-sm">
+                    <a href="index.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Home</a>
+                    <a href="founder.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Founder</a>
+                    <a href="mandir.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Mandirs</a>
+                    <a href="yagyas.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Yagyas</a>
+                    <a href="welfare.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Welfare</a>
+                    <a href="gallery.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Gallery</a>
+                    <a href="contact.html" class="hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-gold after:transition-all">Contact</a>
+                    <!-- Custom Premium Translate Dropdown -->
+                    <div class="relative group ml-4">
+                        <!-- Globe Button -->
+                        <button class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center text-gold hover:bg-gold/10 transition-colors focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </button>
+
+                        <!-- Custom Dropdown Menu -->
+                        <div class="absolute right-0 mt-2 w-48 bg-[#1a202c] border border-gold/30 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50">
+                            <div class="px-4 py-3 border-b border-gold/20 bg-black/20">
+                                <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold">Select Language</span>
+                            </div>
+                            <ul class="py-2 text-xs text-stone-300 font-medium tracking-wide custom-translate-list">
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="en">English</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="hi">Hindi (हिन्दी)</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="gu">Gujarati (ગુજરાતી)</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="mr">Marathi (मराठी)</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="bn">Bengali (বাংলা)</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="ta">Tamil (தமிழ்)</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The Hidden Google Tool -->
+                    <div id="google_translate_element" class="hidden"></div>
+                </nav>
+
+                <button id="menu-btn" class="lg:hidden text-white focus:outline-none transition-colors" aria-label="Toggle Menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden fixed inset-y-0 right-0 w-80 bg-cream shadow-2xl z-50 p-8 flex flex-col justify-between border-l border-gold/20 transform transition-transform duration-300">
+            <div>
+                <div class="flex justify-between items-center mb-12">
+                    <span class="font-serif text-charcoal font-bold tracking-wider">NAVIGATE</span>
+                    <button id="close-menu" class="text-charcoal text-xl font-bold focus:outline-none">✕</button>
+                </div>
+                <nav class="flex flex-col space-y-5 text-sm font-semibold tracking-wider uppercase text-charcoal">
+                    <a href="index.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Home</a>
+                    <a href="founder.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Founder</a>
+                    <a href="mandir.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Mandirs</a>
+                    <a href="yagyas.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Yagyas</a>
+                    <a href="welfare.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Welfare</a>
+                    <a href="gallery.html" class="hover:text-saffron transition-colors border-b border-gray-100 pb-2">Gallery</a>
+                    <a href="contact.html" class="hover:text-saffron transition-colors pb-2">Contact</a>
+                    <!-- Custom Premium Translate Dropdown -->
+                    <div class="relative group ml-4">
+                        <!-- Globe Button -->
+                        <button class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center text-gold hover:bg-gold/10 transition-colors focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </button>
+
+                        <!-- Custom Dropdown Menu -->
+                        <div class="absolute right-0 mt-2 w-48 bg-[#1a202c] border border-gold/30 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50">
+                            <div class="px-4 py-3 border-b border-gold/20 bg-black/20">
+                                <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold">Select Language</span>
+                            </div>
+                            <ul class="py-2 text-xs text-stone-300 font-medium tracking-wide custom-translate-list">
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="en">English</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="hi">Hindi (हिन्दी)</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="gu">Gujarati (ગુજરાતી)</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="mr">Marathi (मराठी)</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="bn">Bengali (বাংলা)</button></li>
+                                <li><button class="w-full text-left px-5 py-2.5 hover:bg-gold/10 hover:text-gold transition-colors" data-lang="ta">Tamil (தமிழ்)</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The Hidden Google Tool -->
+                    <div id="google_translate_element" class="hidden"></div>
+                </nav>
+            </div>
+            <p class="text-[11px] text-charcoal/40 tracking-widest text-center">© 2026 SHRI RISHABH TIRTH TRUST</p>
+        </div>
+    </header>
+
+    <!-- HERO HEADER BANNER START -->
+        <section class="relative min-h-[50vh] sm:min-h-[55vh] flex items-center justify-center overflow-hidden bg-black pt-24 sm:pt-32 pb-24">
+            
+            <!-- Background Image with smooth zoom effect -->
+            <div class="absolute inset-0 z-0 bg-cover bg-center opacity-40 transform hover:scale-110 transition-transform duration-[20s] ease-out" style="background-image: url('https://images.pexels.com/photos/7470318/pexels-photo-7470318.jpeg');"></div>
+            
+            <!-- Pure Black Premium Overlay (No bluish tints) -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-black/95 z-10 pointer-events-none"></div>
+
+            <!-- Content -->
+            <div class="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center mt-8">
+                
+                <!-- Decorative Kicker -->
+                <div class="flex items-center gap-4 mb-6 fade-in-up visible">
+                    <div class="h-[1px] w-8 sm:w-16 bg-gradient-to-r from-transparent to-gold/70"></div>
+                    <span class="text-gold uppercase tracking-[0.4em] text-[10px] sm:text-xs font-bold font-sans">Reach Our Sacred Desks</span>
+                    <div class="h-[1px] w-8 sm:w-16 bg-gradient-to-l from-transparent to-gold/70"></div>
+                </div>
+                
+                <!-- Main Title with Strong Drop Shadow -->
+                <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-wide leading-tight text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] mb-8 fade-in-up visible">
+                    Contact & Pilgrimage Portals
+                </h1>
+                
+                <!-- Refined Description Box (Elegant top/bottom borders) -->
+                <div class="max-w-2xl mx-auto border-t border-b border-gold/30 bg-black/40 backdrop-blur-sm py-5 px-6 fade-in-up visible shadow-xl">
+                    <p class="text-stone-200 text-sm md:text-base font-light tracking-wide leading-relaxed drop-shadow-md">
+                        Connect directly with our administrators and pandits across our four main branches for seva, accommodation inquiries, and yagya registration.
+                    </p>
+                </div>
+
+            </div>
+            
+            <!-- Smooth transition ONLY at the very bottom edge to blend into the next section 
+            <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-cream to-transparent z-20 pointer-events-none"></div>-->
+        </section>
+    <!-- HERO HEADER BANNER END -->
+
+    <section class="py-16 md:py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="text-saffron uppercase tracking-widest text-xs font-bold block mb-2">Location Directory</span>
+                <h2 class="font-serif text-2xl md:text-3xl font-bold text-charcoal">Our Physical Ashrams</h2>
+                <div class="w-16 h-[1px] bg-gold mx-auto mt-3"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch fade-in-up">
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-bold text-saffron uppercase tracking-widest bg-saffron/10 px-2.5 py-1 rounded inline-block">Primary Trust Headquarters</span>
+                        <h3 class="font-serif text-xl font-bold text-charcoal">Shri Rishabh Tirth Ashram</h3>
+                        <p class="text-xs text-stone-500 font-light leading-relaxed">
+                            📍 Damaudhara, Sakti District, Chhattisgarh, India
+                        </p>
+                    </div>
+                    <div class="border-t border-stone-100 pt-4 space-y-2.5 text-xs">
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">Direct Hotline:</span>
+                            <a href="tel:+9198271XXXXX" class="text-charcoal font-bold hover:text-saffron transition-colors">+91 98271 XXXXX</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">WhatsApp Seva:</span>
+                            <a href="https://wa.me/9198271XXXXX" target="_blank" class="text-emerald-600 font-bold hover:underline">Chat with Sakti Desk</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">Official Email:</span>
+                            <a href="mailto:sakti@shririshabhtirth.org" class="text-gold font-medium hover:underline">sakti@shririshabhtirth.org</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-bold text-saffron uppercase tracking-widest bg-saffron/10 px-2.5 py-1 rounded inline-block">Cave Hermitage Hermit Desk</span>
+                        <h3 class="font-serif text-xl font-bold text-charcoal">Shri Ram Janaki Mandir</h3>
+                        <p class="text-xs text-stone-500 font-light leading-relaxed">
+                            📍 Sitamani, Korba, Chhattisgarh, India
+                        </p>
+                    </div>
+                    <div class="border-t border-stone-100 pt-4 space-y-2.5 text-xs">
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">Direct Hotline:</span>
+                            <a href="tel:+9177592XXXXX" class="text-charcoal font-bold hover:text-saffron transition-colors">+91 77592 XXXXX</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">WhatsApp Seva:</span>
+                            <a href="https://wa.me/9177592XXXXX" target="_blank" class="text-emerald-600 font-bold hover:underline">Chat with Korba Desk</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">Official Email:</span>
+                            <a href="mailto:korba@shririshabhtirth.org" class="text-gold font-medium hover:underline">korba@shririshabhtirth.org</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-bold text-saffron uppercase tracking-widest bg-saffron/10 px-2.5 py-1 rounded inline-block">Himalayan Sadhana Center</span>
+                        <h3 class="font-serif text-xl font-bold text-charcoal">Tapovan Ashram & Mandir</h3>
+                        <p class="text-xs text-stone-500 font-light leading-relaxed">
+                            📍 Tapovan, Near Ganga Bank, Rishikesh, Uttarakhand, India
+                        </p>
+                    </div>
+                    <div class="border-t border-stone-100 pt-4 space-y-2.5 text-xs">
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">Direct Hotline:</span>
+                            <a href="tel:+9113524XXXXX" class="text-charcoal font-bold hover:text-saffron transition-colors">+91 13524 XXXXX</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">WhatsApp Seva:</span>
+                            <a href="https://wa.me/9113524XXXXX" target="_blank" class="text-emerald-600 font-bold hover:underline">Chat with Rishikesh Desk</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">Official Email:</span>
+                            <a href="mailto:rishikesh@shririshabhtirth.org" class="text-gold font-medium hover:underline">rishikesh@shririshabhtirth.org</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-bold text-saffron uppercase tracking-widest bg-saffron/10 px-2.5 py-1 rounded inline-block">Avantika Kshetra Sanctuary</span>
+                        <h3 class="font-serif text-xl font-bold text-charcoal">Shri Ram Janaki Mandir</h3>
+                        <p class="text-xs text-stone-500 font-light leading-relaxed">
+                            📍 Sodang, Near Mahakal Horizon, Ujjain, Madhya Pradesh, India
+                        </p>
+                    </div>
+                    <div class="border-t border-stone-100 pt-4 space-y-2.5 text-xs">
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">Direct Hotline:</span>
+                            <a href="tel:+9173425XXXXX" class="text-charcoal font-bold hover:text-saffron transition-colors">+91 73425 XXXXX</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">WhatsApp Seva:</span>
+                            <a href="https://wa.me/9173425XXXXX" target="_blank" class="text-emerald-600 font-bold hover:underline">Chat with Ujjain Desk</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-stone-400 font-light">Official Email:</span>
+                            <a href="mailto:ujjain@shririshabhtirth.org" class="text-gold font-medium hover:underline">ujjain@shririshabhtirth.org</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-stone-50 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-saffron block">Central Office</span>
+                    <h3 class="font-serif text-2xl font-bold text-charcoal">General Communications</h3>
+                    <p class="text-xs text-charcoal/70 font-light leading-relaxed">
+                        For master administrative inquiries regarding structural donations, corporate social responsibility allocations, regulatory validation papers, or global volunteer coordination, please drop an execution docket across our general portal desk.
+                    </p>
+                    <div class="pt-2">
+                        <a href="mailto:info@shririshabhtirth.org" class="inline-block text-xs font-bold tracking-widest uppercase bg-charcoal hover:bg-charcoal/90 text-white px-6 py-3 rounded shadow-md transition-all">
+                            📧 info@shririshabhtirth.org
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-6 md:p-8 rounded-2xl border border-stone-200/60 shadow-sm space-y-6">
+                        <h4 class="font-serif text-sm font-bold text-charcoal tracking-wide border-b border-stone-100 pb-3">
+                            Official Digital Broadcast Channels
+                        </h4>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <a href="https://facebook.com/shririshabhtirth" target="_blank" class="group flex items-center space-x-4 p-4 rounded-xl border border-stone-100 hover:border-blue-600/30 hover:bg-blue-50/20 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-blue-600/10 text-blue-600 flex items-center justify-center font-bold text-lg group-hover:scale-105 transition-transform">
+                                    f
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-bold text-charcoal tracking-wide">Facebook Community</h5>
+                                    <p class="text-[10px] text-stone-400 font-light">Satsang Live streams & Updates</p>
+                                </div>
+                            </a>
+
+                            <a href="https://instagram.com/shririshabhtirth" target="_blank" class="group flex items-center space-x-4 p-4 rounded-xl border border-stone-100 hover:border-pink-600/30 hover:bg-pink-50/20 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-pink-600/10 text-pink-600 flex items-center justify-center font-bold text-lg group-hover:scale-105 transition-transform">
+                                    📸
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-bold text-charcoal tracking-wide">Instagram Profile</h5>
+                                    <p class="text-[10px] text-stone-400 font-light">Daily Darshan & Ashram Reels</p>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/settings/your-channel-link" target="_blank" class="group flex items-center space-x-4 p-4 rounded-xl border border-stone-100 hover:border-emerald-600/30 hover:bg-emerald-50/20 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-600/10 text-emerald-600 flex items-center justify-center font-bold text-lg group-hover:scale-105 transition-transform">
+                                    💬
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-bold text-charcoal tracking-wide">WhatsApp Channel</h5>
+                                    <p class="text-[10px] text-stone-400 font-light">Direct Tithi & Utsav Notifications</p>
+                                </div>
+                            </a>
+
+                            <div class="flex items-center space-x-4 p-4 rounded-xl border border-stone-100 bg-stone-50/50">
+                                <div class="w-10 h-10 rounded-lg bg-gold/10 text-gold flex items-center justify-center font-bold text-lg">
+                                    📞
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-bold text-charcoal tracking-wide">Central Support</h5>
+                                    <p class="text-[10px] text-stone-400 font-light">Available 9:00 AM – 6:00 PM IST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-charcoal text-gray-300 pt-16 pb-8 border-t-4 border-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Shri Rishabh Tirth Trust</h4>
+                <p class="text-xs text-gray-400 leading-relaxed font-light">
+                    Preserving classical dynamic Vedic paths and managing multi-branch historical ashrams under dedicated lines of ascetic lineage parameters.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Quick Navigation</h4>
+                <div class="flex flex-col space-y-2 text-xs font-medium uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-gold transition-colors">Home Base</a>
+                    <a href="founder.html" class="hover:text-gold transition-colors">Pujya Maharaj Ji</a>
+                    <a href="mandirs.html" class="hover:text-gold transition-colors">Ashram Network</a>
+                    <a href="yagyas.html" class="hover:text-gold transition-colors">Vedic Yagyas</a>
+                    <a href="welfare.html" class="hover:text-gold transition-colors">Welfare Initiatives</a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Ashram Locations</h4>
+                <ul class="space-y-1.5 text-[11px] text-gray-400 font-light">
+                    <li>• Sakti, Chhattisgarh</li>
+                    <li>• Korba, Chhattisgarh</li>
+                    <li>• Rishikesh, Uttarakhand</li>
+                    <li>• Ujjain, Madhya Pradesh</li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-white font-bold text-base border-b border-white/10 pb-2 tracking-wider">Newsletter subscription</h4>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Stay updated with spiritual event schedules and periodic tithi alignments.</p>
+                <form class="flex text-xs" onsubmit="event.preventDefault(); alert('Subscribed safely.');">
+                    <input type="email" required placeholder="your@email.com" class="w-full bg-stone-800 border border-stone-700 text-white rounded-l p-2.5 focus:outline-none focus:border-gold">
+                    <button type="submit" class="bg-saffron text-white rounded-r px-4 hover:bg-saffron/90 border-y border-r border-gold/30 font-bold">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-white/5 text-center text-[11px] text-gray-500 space-y-1.5 font-light">
+            <p>© 2026 Shri Rishabh Tirth Trust. All Structural & Spiritual Rights Reserved across global dimensions.</p>
+            <p class="tracking-widest uppercase text-gold/40 text-[9px] font-bold">Preserving Sanatana Heritage Safely Generational</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white text-3xl font-light">&times;</button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain rounded shadow-2xl animate-fade-in" alt="Lightbox Visual View Enlarged">
+    </div>
+
+    <script>
+        // Hero Slider safely verification wrapper
+        let currentSlide = 1;
+        const totalSlides = 3;
+        if (document.getElementById(`slide-1`)) {
+            setInterval(() => {
+                const active = document.getElementById(`slide-${currentSlide}`);
+                if(active) active.classList.replace('opacity-100', 'opacity-0');
+                currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+                const next = document.getElementById(`slide-${currentSlide}`);
+                if(next) next.classList.replace('opacity-0', 'opacity-100');
+            }, 5000);
+        }
+
+        // Header Transformation Scroll Handling Mechanics
+        const header = document.getElementById('main-header');
+        const navTitle = document.getElementById('nav-title');
+        const navSubtitle = document.getElementById('nav-subtitle');
+        const navLinks = document.getElementById('nav-links');
+        const menuBtn = document.getElementById('menu-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                header.classList.add('glass-header', 'py-3', 'shadow-xl');
+                header.classList.remove('bg-transparent', 'py-5');
+                
+                navTitle.classList.add('text-charcoal');
+                navTitle.classList.remove('text-white');
+                
+                navSubtitle.classList.add('text-saffron');
+                navSubtitle.classList.remove('text-gold');
+                
+                navLinks.classList.add('text-charcoal');
+                navLinks.classList.remove('text-white');
+                
+                menuBtn.classList.add('text-charcoal');
+                menuBtn.classList.remove('text-white');
+            } else {
+                header.classList.add('bg-transparent', 'py-5');
+                header.classList.remove('glass-header', 'py-3', 'shadow-xl');
+                
+                navTitle.classList.add('text-white');
+                navTitle.classList.remove('text-charcoal');
+                
+                navSubtitle.classList.add('text-gold');
+                navSubtitle.classList.remove('text-saffron');
+                
+                navLinks.classList.add('text-white');
+                navLinks.classList.remove('text-charcoal');
+                
+                menuBtn.classList.add('text-white');
+                menuBtn.classList.remove('text-charcoal');
+            }
+        });
+
+        // Mobile Canvas Drawer Interactive Control Logic Configurations
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); });
+        closeMenu.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        });
+
+        // Lightbox Operations
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        function openLightbox(src) {
+            lightboxImg.src = src;
+            lightbox.classList.remove('hidden');
+        }
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+        }
+
+        // Animate On Scroll (AOS) native implementation engine
+        const fadeElements = document.querySelectorAll('.fade-in-up');
+        const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -40px 0px" };
+
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => scrollObserver.observe(element));
+    </script>
+
+    <!-- Google Translate Script & Logic -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,gu,mr,bn,ta,te,kn,ml',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        // Wait for DOM to load, then attach clicks to our custom menu
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.custom-translate-list button');
+            
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const langCode = this.getAttribute('data-lang');
+                    const googleSelect = document.querySelector('select.goog-te-combo');
+                    
+                    if (googleSelect) {
+                        googleSelect.value = langCode;
+                        googleSelect.dispatchEvent(new Event('change'));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
