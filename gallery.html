@@ -338,7 +338,7 @@
 
         <!-- Background Image with smooth zoom effect -->
         <div class="absolute inset-0 z-0 bg-cover bg-center opacity-40 transform hover:scale-110 transition-transform duration-[20s] ease-out"
-            style="background-image: url('https://images.pexels.com/photos/7470318/pexels-photo-7470318.jpeg');"></div>
+            style="background-image: url('images/webp/sitamani/7.webp');"></div>
 
         <!-- Pure Black Premium Overlay (No bluish tints) -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-black/95 z-10 pointer-events-none">
@@ -383,11 +383,11 @@
             <div
                 class="flex flex-wrap justify-center items-center gap-2 mb-12 text-[11px] font-bold tracking-widest uppercase fade-in-up">
                 <button onclick="filterGallery('all')" id="tab-all"
-                    class="gallery-tab px-5 py-2.5 rounded border border-saffron bg-saffron text-white transition-all shadow-sm">All
+                    class="gallery-tab px-5 py-2.5 rounded border border-gold/20 bg-white text-charcoal/80 transition-all shadow-sm">All
                     Archives
                 </button>
                 <button onclick="filterGallery('saints')" id="tab-saints"
-                    class="gallery-tab px-5 py-2.5 rounded border border-gold/20 bg-white text-charcoal/80 hover:border-saffron transition-all shadow-sm">Saints
+                    class="gallery-tab px-5 py-2.5 rounded border border-saffron bg-saffron text-white transition-all shadow-sm">Saints
                 </button>
                 <button onclick="filterGallery('sitamani')" id="tab-sitamani"
                     class="gallery-tab px-5 py-2.5 rounded border border-gold/20 bg-white text-charcoal/80 hover:border-saffron transition-all shadow-sm">Sitamani
@@ -1065,6 +1065,7 @@
 
         // Wait for DOM to load, then attach clicks to our custom menu
         document.addEventListener('DOMContentLoaded', function () {
+            filterGallery('saints');
             const langButtons = document.querySelectorAll('.custom-translate-list button');
 
             langButtons.forEach(btn => {
